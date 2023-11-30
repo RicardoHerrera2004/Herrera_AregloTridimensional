@@ -16,22 +16,30 @@ int main()
 
     int matriz[b][c];
 
-    for (int i = 0; i < a; i++)
+    for (int i = 1; i < a; i++)
     {
-        printf ("\n Matriz %d", i);
+        printf("\n Matriz %d", i);
         for (int j = 0; j < b; j++)
         {
-            printf ("\n");
+            printf("\n");
             for (int k = 0; k < c; k++)
             {
-                matriz[j][k]=0;               
+                matriz[j][k] = 0;
                 printf("%d \t", matriz[j][k]);
             }
-            
         }
-        
     }
-    
+
+    printf("\n Matriz %d", a);
+    for (int j = 0; j < b; j++)
+    {
+        printf("\n");
+        for (int k = 0; k < c; k++)
+        {
+            matriz[j][k] = 1;
+            printf("%d \t", matriz[j][k]);
+        }
+    }
 
     return 0;
 }
